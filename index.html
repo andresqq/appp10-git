@@ -1,0 +1,750 @@
+<!doctype html>
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine4/style.css" />
+<script type="text/javascript" src="engine4/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine5/style.css" />
+<script type="text/javascript" src="engine5/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<title>Proyecto Final DAM</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema10.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript -->
+<script src="js/jquery-1.11.2.min.js"> </script>
+<script src="js/jquery.mobile-1.4.5.min.js"> </script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script> <!--necesario*/ -->
+
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/database.jpg','imagenes/quesonlasbesesdedatos.png','imagenes/phpmyadminprro.jpg','imagenes/normalizacin-de-base-de-datos-59-728.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Bases de Datos simples y avanzadas</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1 align="center">Bases de Datos</h1>
+<div>
+  <div align="center">
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image51','','imagenes/database.jpg',1)"><img src="imagenes/1501-database-web-1210x423.jpg" width="90%" height="40%" id="Image51"></a><br>
+  </p>
+  </div>
+</div>
+<div></div>
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es una Base de Datos (DB)?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de Bases de Datos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Bases de Datos Simples</h2>
+  </a>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1 align="center">DB Simples</h1>
+  <div>
+    <div align="center">
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image51','','imagenes/quesonlasbesesdedatos.png',1)"><img src="imagenes/base5.jpg" width="40%" height="40%" id="Image2"></a></p>
+      <p><br>
+        </p>
+      </div>
+  </div>
+  <div></div>
+  </div>
+  </div>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Bases de Datos Avanzadas</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>1.1 Álgebra Relacional</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>1.2 Fases en el diseño de Bases  de Datos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>1.3 Normalización</h2>
+</a>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1 align="center">Normalizacion imagenes</h1>
+<div>
+  <div align="center">
+    <p><br>
+      
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image51','','imagenes/normalizacin-de-base-de-datos-59-728.jpg',1)"><img src="imagenes/normalizacin-de-bases-de-datos-28-728.jpg" width="40%" height="40%" id="Image"></a></p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+<div></div>
+</div>
+</div>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2><strong>Cardinalidad</strong> en las BD</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Que son y para que sirven los SGBD</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Algunos SGBD</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2 align="center">Datos del Desarrollador</h2>
+</a>
+</li>
+</ul>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1 align="center">WowSlider</h1>
+<div>
+  <div align="center">
+    <p>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container4">
+<div class="ws_images"><ul>
+		<li><img src="data4/images/1110749_orig.png" alt="" title="" id="wows4_0"/></li>
+		<li><img src="data4/images/compatibilidad.png" alt="" title="" id="wows4_1"/></li>
+		<li><img src="data4/images/microsoft_sqlserver.png" alt="" title="" id="wows4_2"/></li>
+		<li><img src="data4/images/mysql.jpg" alt="" title="" id="wows4_3"/></li>
+		<li><img src="data4/images/oraclesecuirty.jpg" alt="" title="" id="wows4_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data4/images/postgresqllogo.png" alt="wowslider" title="" id="wows4_5"/></a></li>
+		<li><img src="data4/images/recovercorruptaccessdatabase.jpg" alt="" title="" id="wows4_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data4/tooltips/1110749_orig.png" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data4/tooltips/compatibilidad.png" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data4/tooltips/microsoft_sqlserver.png" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data4/tooltips/mysql.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data4/tooltips/oraclesecuirty.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data4/tooltips/postgresqllogo.png" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data4/tooltips/recovercorruptaccessdatabase.jpg" alt=""/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">cssslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine4/wowslider.js"></script>
+<script type="text/javascript" src="engine4/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <br>
+    </p>
+  </div>
+</div>
+<div></div>
+</div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app 10</h4>
+<h4>Andres Gracia Ramirez</h4>
+</div>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+		<h1>¿Qué es una Base de Datos (DB)?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Una&nbsp;<strong>base de datos</strong>&nbsp;es una colección de  información organizada de forma que un programa de ordenador pueda seleccionar  rápidamente los fragmentos de datos que necesite. Una base de datos es un  sistema de archivos electrónico.</p>
+<p><img src="imagenes/base_datos_network_red_disco_duro2-510x296.jpg" width="90%" height="45%"><br>
+  Las bases de datos tradicionales se organizan por campos,  registros y archivos. Un&nbsp;<strong>campo</strong>&nbsp;es  una pieza única de información; un&nbsp;<strong>registro</strong>&nbsp;es  un sistema completo de campos; y un&nbsp;<strong>archivo</strong>&nbsp;es  una colección de registros. Por ejemplo, una guía de teléfono es análoga a un  archivo. Contiene una lista de registros, cada uno de los cuales consiste en  tres campos: nombre, dirección, y número de teléfono.<br>
+  A veces se utiliza DB, de&nbsp;<em>database</em>&nbsp;en  inglés, para referirse a las bases de datos.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.maestrosdelweb.com/que-son-las-bases-de-datos/"target="_self" data-role="button" id="1Enlace">
+<h2>Más Info</h2>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header"  data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Tipos de Bases de Datos</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Existen varios tipos de  bases de datos; cada tipo de base de datos tiene su propio modelo de datos (la manera de cómo están estructurados).  Entre ellas se incluyen; Modelo plano, modelo jerárquico, modelo relacional y  modelo de red. </p>
+  <h3>El modelo  de base de datos plana</h3>
+  <p><br>
+    En un modelo de base de datos plano, hay dos dimensiones (estructura plana) de  conjunto de datos. Hay una columna de información y dentro de esta columna, se  supone que cada dato tendrá que ver con la columna.<br>
+    Por  ejemplo, un modelo de base de datos plana que sólo incluye códigos postales.  Dentro de la base de datos, sólo habrá una columna y cada nueva fila dentro de  una columna será un nuevo código postal.</p>
+  <p><img src="imagenes/vbkhbhihjk.jpg" width="90%" height="45%"></p>
+  <h3>El modelo  de base de datos jerárquica</h3>
+  <p><br>
+    El modelo jerárquico de bases de datos se asemeja a la estructura de un árbol,  tal como Microsoft Windows organiza las carpetas y archivos. En un modelo  jerárquico de bases de datos, cada enlace es anidado con el fin de conservar  los datos organizados en un orden particular en un mismo nivel de lista. Por  ejemplo, una base de datos jerárquico de ventas, puede incluir las ventas de  cada día como un archivo separado. Anidadas dentro de este archivo están todas  las ventas (el mismo tipo de datos) para el día.</p>
+  <p><img src="imagenes/jerarquico.gif" width="90%" height="45%"></p>
+  <h3>Modelo de  Red</h3>
+  <p><br>
+    En un modelo de red, la característica definitoria es que se almacena un  registro con un enlace a otros registros - en efecto,una red.<br>
+    Estas  redes (o, a veces, a que se refiere como punteros) puede ser una variedad de  diferentes tipos de información como números de nodo de un disco o incluso la  dirección.</p>
+  <p><img src="imagenes/red.png" width="90%" height="45%"></p>
+  <h3><a name="relacional"></a>El Modelo Relacional</h3>
+  <p><br>
+    El modelo relacional es el más popular tipo de base de datos y una herramienta  extremadamente potente, no sólo para almacenar información, también para  acceder a ella.<br>
+    Las bases  de datos relacionales son organizadas en forma de tablas. La belleza de estos  cuadros es que la información se puede acceder o añadir sin reorganizar las  tablas.<br>
+    Una tabla  puede tener muchos registros y cada registro puede tener muchos campos.<br>
+    Hay cuadros que a veces se llaman una relacion. Por  ejemplo, una empresa puede tener una base de datos denominada los pedidos de  los clientes, y dentro de esta base de datos habrán diferentes tablas o  relaciones de todos los pedidos de los clientes. Las tablas pueden incluir la  información del cliente (nombre, dirección, contacto, información, número de  cliente, etc) y otras tablas (relaciones), como las órdenes que el cliente  compró anteriormente (esto puede incluir un número de artículo, la descripción  del artículo, cantidad de pago, la forma de pago, etc).<br>
+    Cabe señalar que cada registro (grupo de campos) en una base de  datos relacional tiene su propia clave principal. Una clave principal es el  único campo que hace que sea fácil identificar a un registro.&nbsp;<br>
+    <img src="imagenes/libreoffice.jpg" width="70%" height="90%"><br>
+    Las bases de datos relacionales utilizan un programa llamado interfaz  estándar&nbsp;<strong> SQL </strong>o  Query Language.<br>
+    SQL se  utiliza actualmente en prácticamente todas las bases de datos relacionales. Las  bases de datos relacionales son extremadamente fáciles de personalizar para  adaptarse a casi cualquier tipo de almacenamiento de datos. Usted puede crear  fácilmente las relaciones de los artículos que usted vende, los empleados que  trabajan para su empresa, etc.</p>
+<h5><img src="imagenes/relacional.png" width="90%" height="45%"></h5>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.tecnologias-informacion.com/basesdedatos.html#"target="_self" data-role="button" id="2Enlace">
+<h2>Más Info</h2>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header"  data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Bases de Datos Simples</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p><strong>ELEMENTOS QUE COMPONEN UNA BASE DE  DATOS..</strong><strong> </strong><br>
+    Es importante señalar que los valores  predeterminados atributos por ejemplo: <br>
+  &nbsp;el&nbsp;código&nbsp;de proyecto  debe ser diferente en los registros de la tabla.Estos atributos han de  ser&nbsp;únicos&nbsp;y no se pueden repetir.La&nbsp;mayoría&nbsp;de las veces  tiene la&nbsp;función&nbsp;de identificadores&nbsp;únicos&nbsp;de  registros&nbsp;únicos&nbsp;es decir identifican solo una&nbsp;aparición&nbsp;en  la tabla.Cuando designamos como clave principal le decimos al valor en el campo  clave principal.En pocas los valores en el campo clave principal tienen  obligatoriamente que ser&nbsp;únicos. </p>
+  <p>IDENTIFICADORES&nbsp; <br>
+    Se trata de campos  de&nbsp;identificación&nbsp;de cada tabla. </p>
+  <p>Faces para  una&nbsp;construcción&nbsp;para una base de datos. </p>
+  <p>1.- Antes de proyectar una base de  datos es &nbsp;necesario que sepas su finalidad es decir. que  es&nbsp;imprescindible conocer el objeto de reunir dichos datos si tienes esto  claro sin duda el trabajo de&nbsp;recopilación&nbsp;sera mas&nbsp;fácil <br>
+    2.-El paso siguiente es decidir  cuales&nbsp;serán&nbsp;las&nbsp;tablas&nbsp;o entidades necesarias para una  mejor&nbsp;organización&nbsp;. &nbsp;&nbsp; <br>
+    3.- Una vez creada la tabla determina  cuales son los datos que se deben almacenar en cada una. <br>
+  &nbsp; 4.- Ahora vamos a designar que  campos&nbsp;serán&nbsp;de la misma clave principal para darle un valor al campo  es importante conocer cuales&nbsp;serán&nbsp;los campos identificadores en las  consultas y&nbsp;búsquedas&nbsp;de datos.&nbsp; <br>
+    5.- la siguiente etapa de proceso  consiste en definir las relaciones entre las entidades como sea en decir en que  la forman los datos de una tabla se relacionan con las&nbsp;demás. <br>
+    6.-&nbsp;Después&nbsp;de superar todas  todas estas etapas llegamos ala face de finalizacion en la que sera necesario  en definir la estructura de la base de datos, comprobando que no hay errores si  es necesario abra que hacer campos en una base de datos. </p>
+  <p>&nbsp;</p>
+  <p><strong>Campo</strong> <br>
+    Un campo es un componente de una tabla  que contiene un elemento específico de información, como ejemplo, nombre  apellidos, edad, sexo, etc. </p>
+  <p><img src="imagenes/campos.gif" width="320" height="153"><br>
+  </p>
+  <p><strong>Registro</strong> <br>
+    Un registro está compuesto por todos  los campos de la tabla, de manera que un campo es una parte de un registro. <br>
+    En una tabla, las filas corresponden  a los registros, los cuales son individuales; y las columnas corresponden a los  campos, que son una parte única de un registro. De manera tal que la  información contenida en una tabla &quot;Directorio Telefónico&quot;, podría  tener la siguiente estructura: <br>
+  </p>
+  <p><img src="imagenes/camposyregistros.jpg" width="90%" height="25%"></p>
+  <p><strong>CONOCER Y MANIPULAR  EL ENTORNO DE ACCESS</strong> <br>
+    Microsoft Access es un potente  sistema de administración de bases de datos relacionales. Las bases de datos en  Access son documentos combinados donde se divide la información por parcelas  de&nbsp;<em>objetos</em>&nbsp;especializados. Así, por ejemplo, como elemento  primario de información se encuentran las tablas. Aunque las tablas se crean de  manera independiente, pueden crearse otros elementos relacionados a las tablas  como formularios, consultas, informes, entre otros. <br>
+  <strong>Tablas</strong> <br>
+    Aunque las tablas se crean de manera  independiente, pueden crearse relaciones hacia éstas que pueden estar  vinculadas a la captura o muestra de la información contenida en dicha tabla.  Es decir, una vez creada la tabla se pueden desarrollar sobre ella diferentes  acciones que nos permitan adicionar, editar o eliminar información. <br>
+  <strong>Consultas</strong> <br>
+    Las consultas se utilizan para  localizar y depurar los datos en particular que cumplen unas determinadas  condiciones especificadas por el usuario. Las consultas permiten, realizar  operaciones de muy diversa índole relacionadas con los datos contenidos en la  tabla. Por ejemplo, a partir de una tabla que contenga los registros de notas  de ciertos alumnos, mediante una consulta podemos depurar la tabla y saber la  cantidad de aprobados y reprobados. <br>
+  <strong>Formularios</strong> <br>
+    Los formularios son otra herramienta  poderosa de Access que nos permite visualizar, introducir y modificar los datos  de las tablas de una manera muy sencilla e interactiva que hace más ameno el  trabajo al usuario. Al abrir un formulario, Access recupera en él los datos de  una o varias tablas y les muestra en un diseño de ficha creado, bien de forma  automática por el Asistente para Formularios, o manualmente por el usuario. Al  mostrar los datos, el usuario puede&nbsp;<em>desplazarse</em>&nbsp;en la tabla  visualizando toda la información y realizando operaciones sobre los registros. <br>
+  <strong>Informes</strong> <br>
+    Los Informes se utilizan  primordialmente para presentar, resumir e imprimir los datos de la forma que  resulte más apropiada para cada proyecto. Permite realizar impresiones  personalizadas así también como etiquetas. Se pueden crear informes que  incorporen cálculos basados en los datos de las tablas para mostrar resultados  totales o promedios o bien para generar catálogos. <br>
+    Todos los elementos anteriores (y  algunos más) están organizados en Access en la ventana<strong>&nbsp;Base de Datos</strong>&nbsp;como  se muestra en la siguiente figura: </p>
+  <p><img src="imagenes/informes.jpg" width="90%" height="45%"></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.youtube.com/playlist?list=PLiYRMtl-7R6SXST8QC2JparuY_39_F_b9"target="_self" data-role="button" id="2Enlace">
+<h2>Más info</h2>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Bases de Datos avanzadas</h1>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <h2>¿Que son?</h2>
+  <p>Sabemos yá, que las bases de datos (DB) son un conjunto de datos persisentes, organizados en tablas y relacionados entre si. Pero a diferencia de las bases de datos simples, las DB avanzadas son un poco mas complejas, incluyendo tambie más herramientas sindigo, que nos pueden ayudar en ciertas tareas a realizar.</p>
+  <p>Una de las herramietas es MySQL, es mas que nada un sistema de gestion de bases de datos relacional basado en SQL que nos permite realizar consultas a nustras bases de datos para mostrar, insertar, actualizar y borrar datos.</p>
+  <p>&nbsp;</p>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1 align="center">Imagen</h1>
+<div>
+  <div align="center">
+    <p><br>
+  </p>
+    <p><img src="imagenes/Imagenuno.png" width="90%" height="85%"></p>
+  </p>
+  </div>
+</div>
+<div></div>
+</div>
+</div>
+  <p>Algunos ejemplos de sentencias de definicion de datos son:</p>
+  <p align="left">CREATE: Utilizado para crear nuevas tablas, campos e indices.</p>
+  <p align="left">DROP:Empleado para eliminar tablas e indices.</p>
+  <p align="left">ALTER: Utilisado para modificar las tablas agregando campos o cabienado la definicion de los compos, por ejemplo, agregar columna a una tabla</p>
+  <p>ALTER TABLE name_table ADD name_column TIPO_DATE</p>
+  <p><img src="imagenes/pimerColapsable.jpg" width="90%" height="60%"></p>
+  <p>&nbsp;</p>
+</div>
+</div>
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1><strong>1.1  Álgebra Relacional</strong></h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h4>El&nbsp;<strong>álgebra  relacional</strong>&nbsp;es un conjunto de operaciones que describen paso a paso  cómo computar una respuesta sobre las relaciones, tal y como éstas son  definidas en el modelo relacional.&nbsp;En los siguientes videos, se explica sobre el  álgebra relacional, te invitamos a que los veas.</h4>
+<p>&nbsp;</p>
+
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://youtu.be/L08RPf5UjZE"target="_self" data-role="button" id="1Enlace">
+  <h2>Más info</h2>
+  </a></li>
+</ul>
+</div>
+
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>1.2  Fases en el diseño de Bases de Datos</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>El diseño de una base de datos no  es un proceso sencillo, requiere de que quien lo lleve a cabo, necesita tener  los conocimientos previos sobre el manejo de las bases de datos, aunado a la  complejidad de la&nbsp; información y la cantidad de requisitos del cliente o  bien, de los sistemas de informaci<img src="imagenes/ProceeConstruccideunabasededatos.jpg" width="90%" height="70%">ón a desarrollar.</p>
+  <p><br>
+    Para facilitar esta tarea, se realizan una serie de fases o etapas, en las  cuales, cada una obtiene el resultado, que sirve como base para cada una de las  siguientes etapas. En los siguientes videos se describen cada una de las etapas  en el diseño de las bases de datos</p>
+  <h2><img src="imagenes/fasesdeldisenodelasdb.jpg" width="90%" height="70%"></h2>
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://youtu.be/jaRbQwfxSQA"target="_self" data-role="button" id="1Enlace">
+  <h2>Más info</h2>
+  </a></li>
+</ul>
+</div>
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>1.3  Normalización</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>El proceso de normalización de  bases de datos consiste en designar y aplicar una serie de reglas a las  relaciones obtenidas tras el paso del modelo entidad-relación al modelo  relacional (fuente: wikipedia). <br>
+    Las bases de  datos se normalizan para:</p>
+    <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1 align="center">Imagen</h1>
+<div>
+  <div align="center">
+    <p><img src="imagenes/NormalizacionBaseDeDatos.png" width="90%" height="45%"><br>
+  </p>
+  </div>
+</div>
+<div></div>
+</div>
+</div>
+  <p>&nbsp;</p>
+  <ul type="square">
+    <li>Evitar       redundancia de los datos.</li>
+    <li>Disminuir       problemas de actualización de los datos en las tablas.</li>
+    <li>Proteger       la integridad de los datos.</li>
+  </ul>
+En los siguientes videos, se aborda el tema de  la normalización...
+<h2>&nbsp;</h2>
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://youtu.be/bO18omSzeR4"target="_self" data-role="button" id="1Enlace">
+  <h2>Más info</h2>
+  </a></li>
+</ul>
+</div>
+
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1><strong>1.4  Cardinalidad</strong></h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Cardinalidad  es el número de entidades con la cual otra entidad se puede asociar mediante  una relación binaria; la cardinalidad puede ser: Uno a uno, uno a muchos o  muchos a uno y muchos a muchos. El tipo de cardinalidad se representa mediante  una etiqueta en el exterior de la relación, respectivamente: &quot;1:1&quot;,  &quot;1:N&quot; y &quot;N:M&quot;, aunque la notación depende del lenguaje  utilizado, la que más se usa actualmente es el unificado.<br>
+    Otra  forma de expresar la cardinalidad es situando un símbolo cerca de la línea que  conecta una entidad con una relación:</p>
+  <p><img src="imagenes/dibujo.jpg" width="90%" height="50%"></p>
+  <ul type="square">
+    <li><strong>&quot;0&quot;</strong>&nbsp;si cada instancia de       la entidad no está obligada a participar en la relación.</li>
+    <li><strong>&quot;1&quot;</strong>&nbsp;si toda instancia de       la entidad está obligada a participar en la relación y, además, solamente       participa una vez.</li>
+  </ul>
+  <strong>&quot;N&quot; , &quot;M&quot;, ó &quot;*&quot;</strong>&nbsp;si cada instancia de la entidad no está  obligada a participar en la relación y puede hacerlo cualquier número de veces.
+  <h2>&nbsp;</h2>
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://youtu.be/FX9pfBFq2Sc"target="_self" data-role="button" id="1Enlace">
+  <h2>Más info</h2>
+  </a></li>
+</ul>
+</div>
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Gestores:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p align="left">Un gestor de base de datos (DataBase  Managenent System) es un sistema que permite la creación, gestión y  administración de bases de datos, así como la elección y manejo de las  estructuras necesarios para el almacenamiento y búsqueda de la información del  modo más eficiente posible.<br>
+    En la actualidad, existen multitud de  SGBD en la mayoría relacionales. A lo largo de este post vamos a mostrar los 10  gestores de bases de datos más usados.<br>
+    MySQL<br>
+  <em>Es un sistema de gestión de base de  datos relacional, multihilo y multiusuario seguramente el más usado en  aplicaciones creadas como software libre.</em><br>
+  <em>Por un lado se&nbsp;ofrece bajo la  GNU GPL, pero, empresas que quieran incorporarlo en productos privativos pueden  comprar a la empresa una licencia que les permita ese uso.</em><br>
+  <em>Ventajas:</em></p>
+  <ul>
+    <li>
+      <div align="right"><em>Velocidad al realizar las operaciones</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Bajo costo en requerimientos para la elaboración de bases de datos</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Facilidad de configuración e instalación.</em></div>
+    </li>
+  </ul>
+  <p>Microsoft SQL Server<br>
+    <em>Es un sistema de gestión de bases de  datos relacionales basado en el lenguaje Transact-SQL, capaz de poner a  disposición de muchos usuarios grandes cantidades de datos de manera  simultánea.</em><br>
+    <em>Es un sistema propietario de  Microsoft. Sus principales características son:</em>
+    <script type="text/javascript" src="engine4/wowslider.js"></script>
+    <script type="text/javascript" src="engine4/script.js"></script>
+  
+    <!-- End WOWSlider.com BODY section -->  </p>
+  <p><img src="imagenes/apachephp.jpg" width="90%" height="45%"></p>
+  <ul>
+    <li>
+      <div align="left"><em>Soporte de transacciones.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Escalabilidad,  estabilidad y seguridad.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Soporta procedimientos almacenados.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Incluye también un potente entorno gráfico de administración, que  permite el uso de comandos DDL y DML gráficamente.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Permite trabajar en modo cliente-servidor donde la información y datos  se alojan en el servidor y las terminales o clientes de la red sólo acceden a  la información.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Además permite administrar información de otros servidores de datos</em></div>
+    </li>
+</ul>
+  <p><em>Su principal desventaja es el precio, aunque cuenta con una versión  EXPRESS que permite&nbsp;usarlo en entornos pequeños. (Aprox. unos 4GB de  información y varios millones de registros por tabla)</em><br>
+    Oracle<br>
+  <em>Es un sistema de gestión de base de  datos relacional (o RDBMS por el acrónimo en inglés de Relational Data Base  Management System), fabricado por Oracle Corporation.</em><br>
+  <em>Tradicionamente Oracle ha sido el  SGBS por excelencia, considerado siempre como el más completo y robusto,  destacando por:</em></p>
+  <ul>
+    <li>
+      <div align="right"><em>Soporte de transacciones.</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Estabilidad.</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Escalabilidad.</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Es multiplataforma.</em></div>
+    </li>
+  </ul>
+  <p><em>Tambien siempre ha sido considerado  de los más caros, por lo que no se ha estadarizado su uso como otras  aplicaciones.</em><br>
+    <em>Al igual que SQL Server, Oracle cuenta con una versión EXPRESS gratis  para pequeñas instalaciones o usuarios personales.</em><br>
+    Microsoft Access<br>
+  <em>Es un sistema de gestión de bases de  datos Relacional creado por Microsoft (DBMS) para uso personal de pequeñas  organizaciones.</em><br>
+  <em>Se ha ofrecido siempre como un  componente de la suite Microsoft Office aunque no se incluye en el paquete  &ldquo;básico&rdquo;.</em><br>
+  <em>Una posibilidad adicional es la de  crear ficheros con bases de datos que pueden ser consultados por otros  programas.</em><br>
+  <em>Entre las principales funcionalidades  reseñables podemos indicar que:</em></p>
+  <p>&nbsp;</p>
+  <ul>
+    <li>
+      <div align="left"><em>Permite crear tablas de datos indexadas.</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Modificar tablas de datos.</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Relaciones entre tablas (creación de bases de datos relacionales).</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Creación de consultas y vistas.</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Consultas referencias cruzadas.</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Consultas de acción (INSERT, DELETE, UPDATE).</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Formularios.</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Informes.</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Entorno de programación a través de VBA</em>      </div>
+    </li>
+    <li>
+      <div align="left"><em>Llamadas a la API de windows.</em></div>
+    </li>
+  </ul>
+  <p>PostgreSQL<br>
+    <em>Es un sistema de gestión de base de  datos relacional orientada a objetos y libre, publicado bajo la licencia BSD.</em><br>
+    <em>Como muchos otros proyectos de código  abierto, el desarrollo de PostgreSQL no es manejado por una empresa y/o  persona, sino que es dirigido por una comunidad de desarrolladores que trabajan  de forma desinteresada, altruista, libre y/o apoyada por organizaciones  comerciales. La&nbsp;comunidad PostgreSQL se denominada el PGDG (PostgreSQL  Global Development Group).</em><br>
+    <em>Sus principales características son:</em></p>
+  <ul>
+    <li>
+      <div align="right"><em>Alta concurrencia: mediante un sistema denominado MVCC (Acceso concurrente  multiversión, por sus siglas en inglés)</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Amplia variedad de tipos nativos: provee nativamente varios soportes</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Ahorros considerables de costos de operación</em></div>
+    </li>
+    <li>
+      <div align="right"><em>Estabilidad y confiabilidad</em></div>
+    </li>
+  </ul>
+  <p>DB2<br>
+    <em>Este SGBD es&nbsp;propiedad de IBM,  bajo la cual se comercializa el sistema de gestión de base de datos. Utiliza  XML como motor, además el modelo que utiliza es el jerárquico en lugar del  modelo relacional que utilizan otros gestores de bases de datos. Es el único de  los gestores que hemos comentado que nos relacional.</em><br>
+    <em>Sus caracteristicas más importantes  son:</em></p>
+  <ul>
+    <li>
+      <div align="left"><em>Permite el manejo de objetos grandes (hasta 2 GB)</em></div>
+    </li>
+    <li>
+      <div align="left"><em>La definición de datos y funciones por parte del usuario, el chequeo de  integridad referencial,</em></div>
+    </li>
+    <li>
+      <div align="left"><em>SQL recursivo, soporte multimedia: texto, imágenes, video, audio;  queries paralelos, commit de dos fases, backup/recuperación on−line y offline.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Permite agilizar el tiempo de respuestas de esta consulta</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Recuperación utilizando accesos de sólo índices.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Predicados correlacionados.</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Tablas de resumen</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Tablas replicadas</em></div>
+    </li>
+    <li>
+      <div align="left"><em>Uniones hash</em></div>
+    </li>
+  </ul>
+  <p><em>Su principal desventaja es el precio,  está dirigido solo a grandes empresas con necesidades de almacenamiento y  &nbsp;procesamiento muy altas.</em><br>
+    <em>Al igual que SQL Server y Oracle dispone de una versión EXPRESS gratis  pero no de libre distribución.</em><br>
+    Existen muchos más gestores de bases  de datos&nbsp;en el mercado, pero estos como he comentado&nbsp;son los más  usados.<br>
+    Todos son relacionales (a excepción  del BD2) &nbsp;y comparten por tanto lenguaje de consulta (con algunas  variantes propias) que es SQL. Es importante por tanto para cualquiera que  desee trabajar con bases de datos comenzar por el estudio de este lenguaje  común y luego estudiar las peculiaridades de la base de datos en cuestion.<br>
+    Entre los citados seguro que  encontramos el que más se adapta a nuestras necesidades de acuerdo a inversión  a realizar, volumen de información a almacenar, tipo de consultas a realizar,  etc.</p>
+  <h2><img src="imagenes/246x0w.jpg" width="50%" height="50%"></h2>
+<p>&nbsp;</p>
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Gestores mas conocidos</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><img src="imagenes/246x0w.jpg" width="50%" height="50%"></h2>
+<p><img src="imagenes/microsoft_sqlserver.png" width="50%" height="25%"></p>
+<p><img src="imagenes/oraclelogo2.png" width="50%" height="50%"></p>
+<p><img src="imagenes/postgresql-logo.png" width="50%" height="30%"></p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image51','','imagenes/phpmyadminprro.jpg',1)"><img src="imagenes/phpmyadmin.jpg" width="50%" height="25%" id="Image3"></a></p>
+<p>&nbsp;</p>
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina11" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Datos del Dasarrollador:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p align="left"><strong>Nombre:</strong>Gracia Ramirez Andres</p>
+<p align="left">Semestre: 4°</p>
+<p align="left">Grupo: &quot;G&quot;</p>
+<p align="left"><span class="prro">Submodulo:</span> Desarrolla Aplicaciones Móviles </p>
+<p align="left"><span class="prro">Profesor:</span> Lic. José Antonio Gómez Hernández </p>
+<p>&nbsp;</p>
+</div>
+</div> 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<h4>app10 GRA</h4>
+</div>
+</div>
+</body>
+</html>
